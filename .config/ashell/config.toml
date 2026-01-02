@@ -1,0 +1,67 @@
+log_level = "warn"
+outputs = { Targets = ["eDP-1", "HDMI-A-1"] }
+position = "Top"
+app_launcher_cmd = "wofi --show drun"
+
+[modules]
+left = [[ "AppLauncher", "Workspaces" ], "MediaPlayer" ]
+center = [[ "Clock", "Calendar" ]]
+right = [ "SystemInfo", "Privacy", "Tray", "Settings" ]
+
+[workspaces]
+enable_workspace_filling = true
+
+[[CustomModule]]
+name = "AppLauncher"
+icon = "󱗼"
+command = "wofi --show drun"
+
+[[CustomModule]]
+name = "Calendar"
+icon = ""
+command = 'ghostty -e bash -c "calcure" &'
+
+[window_title]
+truncate_title_after_length = 100
+
+[settings]
+lock_cmd = "hyprlock"
+audio_sinks_more_cmd = "pavucontrol -t 3"
+audio_sources_more_cmd = "pavucontrol -t 4"
+wifi_more_cmd = "nm-connection-editor"
+vpn_more_cmd = "nm-connection-editor"
+bluetooth_more_cmd = "blueberry"
+
+[media_player]
+max_title_length = 50
+
+[system_info]
+indicators = [ "Cpu", "Memory" ]
+
+[appearance]
+style = "Islands"
+font_name = "FiraCode Nerd Font Mono"
+scale_factor = 1.12
+opacity = 0.9
+
+success_color = "#a6e3a1"
+text_color = "#cdd6f4"
+
+workspace_colors = [ "#fab387", "#b4befe", "#cba6f7" ]
+
+[appearance.primary_color]
+base = "#fab387"
+text = "#1e1e2e"
+
+[appearance.danger_color]
+base = "#f38ba8"
+weak = "#f9e2af"
+
+[appearance.background_color]
+base = "#1e1e2e"
+weak = "#313244"
+strong = "#45475a"
+
+[appearance.secondary_color]
+base = "#11111b"
+strong = "#1b1b25"
