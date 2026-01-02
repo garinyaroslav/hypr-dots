@@ -15,26 +15,23 @@ Arch Linux and Hyprland desktop environment.
 1. **Clone the repository to your home directory:**
 
    ```bash
-   cd ~
-   git clone https://github.com/garinyaroslav/hypr-dots.git
-
-    Run the installation script:
-
-cd ~/hypr-dots
-chmod +x install.sh
-./install.sh
+    cd ~
+    git clone https://github.com/garinyaroslav/hypr-dots.git
+    cd ~/hypr-dots
+    chmod +x install.sh
+    ./install.sh
 
 Set up the configuration files:
 
 # Copy configs to appropriate locations
-cp -r .config ~/
-cp .zshrc ~/
+
+    cp -rnv .config/* ~/.config/
+    cp .zshrc ~/
+    rm -rf ~/hypr-dots
 
 Reload your shell:
 
     source ~/.zshrc
-
-    Or log out and log back in.
 
 📁 Configuration Structure
 
@@ -51,7 +48,6 @@ Reload your shell:
 ├── .zshrc             # Zsh configuration
 ├── .gitignore         # Git ignore rules
 ├── install.sh         # Package installation script
-└── README.md          # This file
 
 🛠️ Included Software
 
