@@ -35,19 +35,19 @@ Reload your shell:
 
 📁 Configuration Structure
 
-~/
-├── .config/
-│   ├── ashell/        # Ashell terminal configuration
-│   ├── flameshot/     # Screenshot tool settings
-│   ├── ghostty/       # Ghostty terminal config
-│   ├── alacritty/     # Alacritty terminal config
-│   ├── hypr/          # Hyprland WM configuration
-│   ├── nvim/          # Neovim editor setup
-│   ├── tmux/          # Tmux multiplexer config
-│   └── wofi/          # Application launcher
-├── .zshrc             # Zsh configuration
-├── .gitignore         # Git ignore rules
-├── install.sh         # Package installation script
+    ~/
+    ├── .config/
+    │   ├── ashell/        # Ashell terminal configuration
+    │   ├── flameshot/     # Screenshot tool settings
+    │   ├── ghostty/       # Ghostty terminal config
+    │   ├── alacritty/     # Alacritty terminal config
+    │   ├── hypr/          # Hyprland WM configuration
+    │   ├── nvim/          # Neovim editor setup
+    │   ├── tmux/          # Tmux multiplexer config
+    │   └── wofi/          # Application launcher
+    ├── .zshrc             # Zsh configuration
+    ├── .gitignore         # Git ignore rules
+    ├── install.sh         # Package installation script
 
 🛠️ Included Software
 
